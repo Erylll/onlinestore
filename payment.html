@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Оплата</h2>
+        <form class="payment-form" action="confirmation.html" method="post">
+            <label for="card-number">Номер карты</label>
+            <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+
+            <label for="card-name">Имя на карте</label>
+            <input type="text" id="card-name" placeholder="Имя владельца карты" required>
+
+            <label for="expiry-date">Срок действия</label>
+            <input type="text" id="expiry-date" placeholder="MM / YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="XXX" required>
+
+            <button type="submit" class="submit-button">Подтвердить оплату</button>
+        </form>
+    </div>
+</body>
+</html>
